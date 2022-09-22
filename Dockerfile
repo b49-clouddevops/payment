@@ -1,1 +1,8 @@
-FROM python:3 
+FROM     python:3 
+RUN      mkdir /app 
+WORKDIR  /app  
+
+ADD payment.ini .  
+ADD payment.py .
+ADD rabbutmq.py . 
+ADD requirements.txt . 
