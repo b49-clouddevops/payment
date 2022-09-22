@@ -7,4 +7,4 @@ ADD              payment.py .
 ADD              rabbutmq.py . 
 ADD              requirements.txt . 
 RUN              pip3 install -r requirements.txt 
-ENTRYPOINT       
+ENTRYPOINT       ["uwsgi", "--ini", "payment.ini"]
